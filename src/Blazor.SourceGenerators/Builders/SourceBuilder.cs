@@ -17,7 +17,7 @@ internal sealed class SourceBuilder
     private Indentation _indentation = new(0);
     private string? _implementationName;
     private string? _interfaceName;
-    private bool _isService;
+    private readonly bool _isService;
 
     internal ISet<string>? Fields { get; private set; }
     internal ISet<string>? Methods { get; private set; }
